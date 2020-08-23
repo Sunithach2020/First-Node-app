@@ -1,0 +1,252 @@
+Demo on Installtions:
+ In D drive create a folder Demo/first-node-app
+create a node server(prerequisites:visual studio code, nodejs, git, 
+pushing code to github
+from visual studio code open the folder first=node=app
+(install visual studio code from the link "visualstudio.microsoft.com" depends on the OS select the installation package
+download and install....)
+goto the website nodejs.org/en/ download the stable versionand install
+after installation , go to visualstudiocode - terminal and type
+node =v to check which version of node is instlled
+npm init (to initialize the package)
+npm init -y
+
+which will give us pckage.json file
+what are all packages required to run nodejs
+next type npm install express
+is a command for package "express"
+express js is  web app framework for node js(like asp.net for .net)
+create a sample.txt file wiht the text
+node js is an environment to run the javascript in the serverside
+in 2009 Ryan Dhal- created an environment that helped Javascript to run on the serverside
+earlier we used Javascript as a client side programming
+like
+fronend validations, minor HTML Mnipulations
+ajax calls, angular js, backhome.js, reactjs
+
+back end is MongoDB
+MEAN...Mongo db, Express JS, Angular, Nodejs
+except Mongo db remining all will use Javascript
+Mondo db is JSON or no sql
+
+next go to Pakcage.json 
+
+remove the node_modules, remove pckage.json and package-lock.json
+go to terminal
+>npm init 
+remove and install again
+npm init -y
+
+change the package.json file
+desc: My first nodejs application
+main file: 
+create a new file called "server.js"
+(to get the extensions install vscode-icons)
+ 2. npm install express 
+(will get node_modules and package-lock.json file)
+pckage-lock will help to maintain versions
+
+go to server.js file
+runthis file at terminal as >node server.js 
+
+var a = 1//js is dynamic language
+
+install nodemon
+npm install nodemon -D
+nodemon..will help us to run the server whenever there is  change in th e
+devdependencies pakcages will not go for production
+specifically for development...
+dependencies: will help to execure them in production environment.       
+//create an express varible
+ 
+const express = require("express)
+const app = express();
+app.get("/", (req, res) =>
+res.send("welcome to fullstack demo")
+})
+const PORT = 8080;
+app.listen(PORT, () => {
+//console.log("Serverlistening at port"+ PORT)
+console.log(`serverlistening at port ${PORT}
+})
+
+to run the server:
+node server 
+go to browser
+localhost:8080
+
+save changes to GITHUB
+github.com
+gitdownload: git-scm.com
+after installation go to gitbash
+ctrl+c to increase font
+
+app.liosten(PORT, fumnction(){
+console.log(`server listening at port ${PORT}`)
+})
+c
+()=>{
+}...ES6 FAT Arrow Function
+or
+function(){
+}..javascript
+
+})          
+                 
+17-ug-2020
+GITHUB
+Github is a source repository ... where we cn save your code, changes and track everything in the project.
+TFS, SVN, VSS
+create a public repository ...giv the name and description ..then click on create repository
+next map your local drive to github repository
+git commands:
+1. git init...to initialize the git repository
+2. git remote add origin https://github.com
+3. git status...wuilll give watare all fles included..status of current files nd folders
+.gitignore add this...and watever nt required u cn drag nd drop
+. git add . will add all the files to git repository'
+git add filename - will add the specific file to repository
+git commit -am 'commit changes'//commit name
+
+�or push an existing repository from the command line
+git remote add origin https://github.com/Sunithach2020/first-node-app.git
+git push -u origin master
+
+
+20-Aug-2020
+<head>
+<link Tags>
+<title> Link Tags</Title>
+</head>
+<body><a href="/userlogin.aspx" target = "_top">login page</a>
+(target=top,blank)
+
+<!--Image control-->
+<img src="/hi.jpg" alt="heallo all"/>
+
+<!--link tags-->      
+
+
+21-Aug-2020
+HTML Forms:
+<form action="/userregistration.aspx" method="get">
+
+</form>
+HTTP methods- GET(to fetch somedata)PUT(fetch nd modify), POST(post bac to server), DELETE(CRUD Operations)
+HTML Form controls:
+Text input control--[Single line, password, multiline]
+checkbox control
+Radiobox control
+Selectbox control
+File control
+Hidden control
+Clickable button
+Submit and Reset buton
+
+<title> Text Input control</Title>
+<form> 
+<!-- Single Line Input control-->  comments section
+<label> FirstName:</label>
+First Name: <Input type="text" name="fName" value="" size="10"/><br><br>
+Last Name<Input type="text" name="lName"/>
+<!-- password controls-->
+<label> Password: </label>
+<input type="password" name="Password" value ="Password" size="50">
+<!-- Multi line control-->
+<label> Description:</label>
+<Textarea name="description" rows="5" col="50">This is textarea control
+
+<!-- CHECKBOX Control-->
+<html><head><title> checkbox </title></head></html>
+<body><h1> Checkbox input control</h1>
+<form>
+<input type="Checkbox" name="Maths" value="sub1" checked> Maths
+<input type="Checkbox" nme="Science"> Science
+</form> </body></html>
+<!-- radiobox control-->
+<html><head> <title> Rdiobox control</title></head></html>
+<body><h1> radio control</h1>
+<form>
+<input type="radio" name="language" value="C#">C#
+<input type="radio" name="language" value="html">html
+<!-- give the same "name" to all option which gives to select one option-->
+
+<--Select box conrol-->
+<select multiple><!-- with multiple option you can seelect multiple values--> 
+<option value ="0" selected>Select</option>
+<option value="Maths">Maths</option>
+<option value ="Science">Science</option>
+<option value="English">English</option>
+</select>
+
+
+<!--File Upload-->
+<body>
+<h1> File upload control</h1>
+<form>
+<input 
+type="file" name="upload">
+
+<!-- Hidden form control>
+<body>
+<input type="hidden" name ="page" value="100">
+
+<!--clickble button>
+<input type="Submit" name ="Submit" vlue="Submit">
+<input type="reset" name="reset" value="Reset">
+<input type="button" name="Create" value = "Create">
+<input type="Image" name="Image" src="/images/imagebutton"></br></br>
+<button> GetDat</button>
+</form>
+
+Block level element and Inline element:
+Block level element occupies entire spce of the Parent
+Always start in a new line
+<H1><H6>
+<table>
+<p>
+<div>
+<form>
+<video>
+<hr>
+<address>
+<header>
+<footer>
+
+Inline elements:
+<span>
+<a>
+<button>
+<sup><sub>
+<Textrea>
+<label>
+<b><strong><img>
+
+
+<body><h1> Bloc level elemnt>//occupies entire parent
+
+<p> this is paragraph>
+<div> div elemnt
+<table>
+<tr>
+<th> Name</th>
+<td> Suni</td>
+</tr>
+</table>
+<form>
+< a href="">Angular</a>
+<lable> <div>this is myu div</div>
+</label>
+
+
+
+//to push the code
+new terminal
+or else go to gitbash
+> git status
+<to see the new items>
+>git add .
+{will add the untracked files}
+git commit -am 'forms,block level elemts'
+git push origin master(to push our changes)
+s 
